@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ah6-Sj-AP3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ah6-Sj-AP3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,18 +18,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-yl-GKW" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="175" y="333" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693083503495" green="0.74611824218280132" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-yl-GKW" customClass="CRNetworkButton" customModule="CRNetworkButton">
+                                <rect key="frame" x="62.5" y="366.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.4896693083503495" green="0.74611824218280132" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="dZN-zT-W4G"/>
                                     <constraint firstAttribute="height" constant="50" id="nkX-WW-gm2"/>
                                 </constraints>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
@@ -37,15 +41,15 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDw-oT-pfH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-eT-xB9" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="175" y="275" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-eT-xB9" customClass="CRNetworkButton" customModule="CRNetworkButton">
+                                <rect key="frame" x="62.5" y="308.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cmV-Sv-AQX"/>
                                     <constraint firstAttribute="width" constant="250" id="grh-Ht-FfM"/>
                                 </constraints>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
@@ -65,15 +69,15 @@
                                     <action selector="secondButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSP-pu-Q2W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-45-xau" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="175" y="217" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-45-xau" customClass="CRNetworkButton" customModule="CRNetworkButton">
+                                <rect key="frame" x="62.5" y="250.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DfP-ad-Tkv"/>
                                     <constraint firstAttribute="width" constant="250" id="l6C-mZ-Fp2"/>
                                 </constraints>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
@@ -83,15 +87,15 @@
                                     <action selector="topButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPX-eX-fA4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDX-V6-oHV" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="175" y="391" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDX-V6-oHV" customClass="CRNetworkButton" customModule="CRNetworkButton">
+                                <rect key="frame" x="62.5" y="424.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="0K9-kt-bdq"/>
                                     <constraint firstAttribute="height" constant="50" id="ivt-K9-0oC"/>
                                 </constraints>
                                 <state key="normal" title="Send">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
@@ -103,7 +107,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eZ9-eT-xB9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hve-Dc-XkA"/>
                             <constraint firstItem="eZ9-eT-xB9" firstAttribute="top" secondItem="uPy-45-xau" secondAttribute="bottom" constant="8" id="Mhm-pp-yhs"/>
@@ -118,7 +122,7 @@
                     <navigationItem key="navigationItem" id="JVz-Mp-3kL">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Xc1-dc-BRF">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8z6-zR-MH3">
-                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <rect key="frame" x="226" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Collection"/>
                                 <connections>
@@ -141,7 +145,7 @@
             <objects>
                 <collectionViewController id="SNI-9g-RNT" customClass="MyCollectionViewController" customModule="CRNetworkButton_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PIb-Rx-Xc2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="thk-en-ZNJ">
                             <size key="itemSize" width="60" height="40"/>
@@ -151,7 +155,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellIdentifier" id="vOX-My-dTh">
-                                <rect key="frame" x="0.0" y="64" width="60" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="60" height="40"/>
@@ -159,10 +163,10 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbh-CF-I8r" customClass="CRNetworkButton" customModule="CRNetworkButton">
                                             <rect key="frame" x="2" y="11" width="56" height="18"/>
-                                            <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="6"/>
                                             <state key="normal">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="startText" value="Send"/>
@@ -173,12 +177,11 @@
                                                     <integer key="value" value="4"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="crDotColor">
-                                                    <color key="value" red="0.48931293110000001" green="0.58305583120000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="0.48931293110000001" green="0.58305583120000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="Hbh-CF-I8r" firstAttribute="leading" secondItem="vOX-My-dTh" secondAttribute="leading" constant="2" id="5O9-ib-K8O"/>
@@ -217,6 +220,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="o7O-71-gBf"/>
+        <segue reference="hvt-ET-n6q"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -151,7 +151,7 @@ open class CRNetworkButton: UIButton {
     fileprivate var conHeight: NSLayoutConstraint!
     
     fileprivate var startBounds: CGRect!
-    fileprivate var startBackgroundColor: UIColor!
+    fileprivate var startBackgroundColor: UIColor?
     fileprivate var startTitleColor: UIColor!
     
     fileprivate let prepareGroup = DispatchGroup()
@@ -218,7 +218,7 @@ open class CRNetworkButton: UIButton {
         CATransaction.begin()
         CATransaction.setDisableActions( true )
         
-        layer.backgroundColor = startBackgroundColor.cgColor
+        layer.backgroundColor = (startBackgroundColor ?? UIColor.clear).cgColor
         
         checkMarkLayer.opacity = 0
         borderLayer.borderWidth = 0
@@ -448,7 +448,7 @@ extension CRNetworkButton {
         boundAnim.toValue = NSValue(cgRect: circleBounds)
         
         let colorAnim = CABasicAnimation(keyPath: "backgroundColor")
-        colorAnim.toValue = UIColor.white.cgColor
+        colorAnim.toValue = UIColor.clear.cgColor
         
         let layerGroup = CAAnimationGroup()
         layerGroup.animations = [boundAnim,colorAnim]
@@ -489,7 +489,7 @@ extension CRNetworkButton {
             self.borderLayer.bounds = self.circleBounds
             self.borderLayer.position = self.boundsCenter
             
-            self.layer.backgroundColor = UIColor.white.cgColor
+            self.layer.backgroundColor = UIColor.clear.cgColor
             self.bounds = self.circleBounds
             
             self.borderLayer.removeAllAnimations()
@@ -703,7 +703,8 @@ extension CRNetworkButton {
         boundsAnim.toValue = NSValue(cgRect: startBounds)
         
         let colorAnim = CABasicAnimation(keyPath: "backgroundColor")
-        colorAnim.toValue = (shouldAutoReverse ? startBackgroundColor : UIColor.white).cgColor
+
+        colorAnim.toValue = (shouldAutoReverse ? (startBackgroundColor ??  UIColor.clear ): UIColor.clear).cgColor
         colorAnim.fromValue = stopedByError ? crErrorColor : crDotColor.cgColor
         
         let layerGroup = CAAnimationGroup()
@@ -737,10 +738,10 @@ extension CRNetworkButton {
         
         finishLoadingGroup.notify(queue: DispatchQueue.main) {
             if self.shouldAutoReverse {
-                self.layer.backgroundColor = self.startBackgroundColor.cgColor
+                self.layer.backgroundColor = (self.startBackgroundColor ?? UIColor.clear).cgColor
                 self.borderLayer.borderWidth = 0
             } else {
-                self.layer.backgroundColor = UIColor.white.cgColor
+                self.layer.backgroundColor = UIColor.clear.cgColor
             }
             
             self.borderLayer.position = self.boundsStartCenter
