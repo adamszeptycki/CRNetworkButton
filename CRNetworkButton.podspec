@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CRNetworkButton"
-  s.version          = "1.0.3"
+  s.version          = "1.0.4"
   s.summary          = "Button with embedded animations of loading."
   s.description      = <<-DESC
 "Button with embedded animations of loading. Configurable loading animation, also has progress mode"
@@ -14,6 +14,7 @@ DESC
   s.source           = { :git => "https://github.com/Cleveroad/CRNetworkButton.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'CRNetworkButton/Classes/**/*'
+  s.dependency 'SnapKit'
+  s.dependency 'NVActivityIndicatorView'
 end

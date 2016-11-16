@@ -21,27 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-yl-GKW" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="62.5" y="366.5" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693083503495" green="0.74611824218280132" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="dZN-zT-W4G"/>
-                                    <constraint firstAttribute="height" constant="50" id="nkX-WW-gm2"/>
-                                </constraints>
-                                <state key="normal" title="Send">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="endText" value="DONE"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="progressMode" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAutoReverse" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDw-oT-pfH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-eT-xB9" customClass="CRNetworkButton" customModule="CRNetworkButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-eT-xB9" customClass="CRNetworkButton" customModule="CRNetworkButton_Example" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="308.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -64,17 +44,20 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="linesCount">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="crBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="secondButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSP-pu-Q2W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPy-45-xau" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="62.5" y="250.5" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyU-yl-GKW" customClass="CRNetworkButton" customModule="CRNetworkButton_Example" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="366.5" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.4896693083503495" green="0.74611824218280132" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="DfP-ad-Tkv"/>
-                                    <constraint firstAttribute="width" constant="250" id="l6C-mZ-Fp2"/>
+                                    <constraint firstAttribute="width" constant="250" id="dZN-zT-W4G"/>
+                                    <constraint firstAttribute="height" constant="50" id="nkX-WW-gm2"/>
                                 </constraints>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,41 +65,20 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="endText" value="DONE"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="progressMode" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAutoReverse" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="topButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DPX-eX-fA4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDX-V6-oHV" customClass="CRNetworkButton" customModule="CRNetworkButton">
-                                <rect key="frame" x="62.5" y="424.5" width="250" height="50"/>
-                                <color key="backgroundColor" red="0.4896693084" green="0.7461182422" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="0K9-kt-bdq"/>
-                                    <constraint firstAttribute="height" constant="50" id="ivt-K9-0oC"/>
-                                </constraints>
-                                <state key="normal" title="Send">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startText" value="SEND"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="endText" value="DONE"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="errorText" value="ERROR"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="failableButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPf-9s-QYU"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDw-oT-pfH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.59607843140000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eZ9-eT-xB9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hve-Dc-XkA"/>
-                            <constraint firstItem="eZ9-eT-xB9" firstAttribute="top" secondItem="uPy-45-xau" secondAttribute="bottom" constant="8" id="Mhm-pp-yhs"/>
                             <constraint firstItem="QyU-yl-GKW" firstAttribute="top" secondItem="eZ9-eT-xB9" secondAttribute="bottom" constant="8" id="QOy-yv-K7W"/>
                             <constraint firstItem="eZ9-eT-xB9" firstAttribute="centerX" secondItem="QyU-yl-GKW" secondAttribute="centerX" id="Va5-Ze-kVF"/>
                             <constraint firstItem="QyU-yl-GKW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvM-Xu-7Iq"/>
-                            <constraint firstItem="eDX-V6-oHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iRw-e2-Sle"/>
-                            <constraint firstItem="uPy-45-xau" firstAttribute="centerX" secondItem="QyU-yl-GKW" secondAttribute="centerX" id="vGf-Kg-btE"/>
-                            <constraint firstItem="eDX-V6-oHV" firstAttribute="top" secondItem="QyU-yl-GKW" secondAttribute="bottom" constant="8" id="vpz-WT-hZf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JVz-Mp-3kL">
@@ -132,7 +94,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="button" destination="QyU-yl-GKW" id="tUR-ii-RG1"/>
+                        <outlet property="button" destination="QyU-yl-GKW" id="53x-GJ-asN"/>
                         <segue destination="SNI-9g-RNT" kind="show" id="o7O-71-gBf"/>
                     </connections>
                 </viewController>

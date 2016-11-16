@@ -1,14 +1,15 @@
 PODS:
-  - CRNetworkButton (0.1.0)
+  - NVActivityIndicatorView (3.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
-  - CRNetworkButton (from `../`)
-
-EXTERNAL SOURCES:
-  CRNetworkButton:
-    :path: ../
+  - NVActivityIndicatorView
+  - SnapKit
 
 SPEC CHECKSUMS:
-  CRNetworkButton: c580cd7005878fa0c8677b6e3f9b507539a54b08
+  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 04d09dd5966a419928552b8134b4620dd33e1bf4
+
+COCOAPODS: 1.1.1

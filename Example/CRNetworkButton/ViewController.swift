@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CRNetworkButton
 
 class ViewController: UIViewController {
     
@@ -17,7 +16,7 @@ class ViewController: UIViewController {
     var progress: CGFloat = 0
     var timer: Timer?
     let requestDuration = 4.0
-    let frequencyUpdate = 0.01
+    let frequencyUpdate = 0.2
     var failureCounter = 0
     
     lazy var progressPerFrequency: CGFloat = {
@@ -28,18 +27,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     
     func updateProgress() {
         guard progress <= 1 else {
             timer?.invalidate()
+            button.completionHandler = {
+                self.button.progressMode = false
+                self.button.shouldAutoReverse = false
+                self.button.completionHandler = nil
+            }
             button.stopAnimate()
             progress = 0
+
             return
         }
-        
-        progress += progressPerFrequency//0.005
+
+        progress += progressPerFrequency
         button.updateProgress( progress )
+        print(progress)
     }
 }
 
@@ -59,12 +65,18 @@ extension ViewController {
         sender.isSelected = true
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(2*NSEC_PER_SEC)) / Double(NSEC_PER_SEC)) {
             sender.stopAnimate()
+
         }
     }
     
     @IBAction func secondButtonTapped(_ sender: CRNetworkButton) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(2*NSEC_PER_SEC)) / Double(NSEC_PER_SEC)) {
-            sender.stopAnimate()
+                sender.progressMode = true
+                sender.shouldAutoReverse = true
+                self.timer?.invalidate()
+                self.timer = Timer.scheduledTimer(timeInterval: self.frequencyUpdate, target:self, selector: #selector(ViewController.updateProgress),
+                                             userInfo: nil, repeats: true)
+                sender.startAnimate()   
         }
     }
     

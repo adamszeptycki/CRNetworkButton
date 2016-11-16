@@ -15,7 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6A3E17441CEF429A00EAAEA4 /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3E17431CEF429A00EAAEA4 /* MyCollectionViewController.swift */; };
 		87E4829E1D82B9CF00E02654 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E4829D1D82B9CF00E02654 /* FakeNetworkManager.swift */; };
-		E0BF17247FEC167EF061928F /* Pods_CRNetworkButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCCD0F89F15627866E159DC /* Pods_CRNetworkButton_Example.framework */; };
+		91BA44521DDC7F470014AEB9 /* CRNetworkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA44511DDC7F470014AEB9 /* CRNetworkButton.swift */; };
+		D9CE6C9856A7E37A6905AC4F /* Pods_CRNetworkButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59533E6A35B217C4FE72934 /* Pods_CRNetworkButton_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06E0529F0564BD30E64BE2E5 /* Pods-CRNetworkButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRNetworkButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRNetworkButton_Example/Pods-CRNetworkButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		178A399D70CAA4E2AD7B84B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1B5494E6C9DC47F7A0FFCAC2 /* Pods-CRNetworkButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRNetworkButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRNetworkButton_Example/Pods-CRNetworkButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5901706DFBB3B90038A99C04 /* Pods-CRNetworkButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRNetworkButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRNetworkButton_Example/Pods-CRNetworkButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CRNetworkButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRNetworkButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6A3E17431CEF429A00EAAEA4 /* MyCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
-		6CCCD0F89F15627866E159DC /* Pods_CRNetworkButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRNetworkButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E4829D1D82B9CF00E02654 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		91BA44511DDC7F470014AEB9 /* CRNetworkButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CRNetworkButton.swift; path = ../CRNetworkButton/Classes/CRNetworkButton.swift; sourceTree = "<group>"; };
+		926BE509EA3AD082DFDAD12F /* Pods-CRNetworkButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRNetworkButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRNetworkButton_Example/Pods-CRNetworkButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0EAA9DF06AE5A6E2F5C1FA0 /* CRNetworkButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CRNetworkButton.podspec; path = ../CRNetworkButton.podspec; sourceTree = "<group>"; };
 		F0D1E1C3DE3DF9A4BCCFFD39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F59533E6A35B217C4FE72934 /* Pods_CRNetworkButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRNetworkButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0BF17247FEC167EF061928F /* Pods_CRNetworkButton_Example.framework in Frameworks */,
+				D9CE6C9856A7E37A6905AC4F /* Pods_CRNetworkButton_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,10 +70,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17FBD03D4160FFEBF845FE93 /* Frameworks */ = {
+		171DB84D610549C29CFAC5B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CCCD0F89F15627866E159DC /* Pods_CRNetworkButton_Example.framework */,
+				F59533E6A35B217C4FE72934 /* Pods_CRNetworkButton_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,12 +81,13 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				91BA44511DDC7F470014AEB9 /* CRNetworkButton.swift */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for CRNetworkButton */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				98062550B64146B35175EE67 /* Pods */,
-				17FBD03D4160FFEBF845FE93 /* Frameworks */,
+				C1356D0B8593DF358DE106CB /* Pods */,
+				171DB84D610549C29CFAC5B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,11 +151,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		98062550B64146B35175EE67 /* Pods */ = {
+		C1356D0B8593DF358DE106CB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5901706DFBB3B90038A99C04 /* Pods-CRNetworkButton_Example.debug.xcconfig */,
-				1B5494E6C9DC47F7A0FFCAC2 /* Pods-CRNetworkButton_Example.release.xcconfig */,
+				926BE509EA3AD082DFDAD12F /* Pods-CRNetworkButton_Example.debug.xcconfig */,
+				06E0529F0564BD30E64BE2E5 /* Pods-CRNetworkButton_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -164,12 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "CRNetworkButton_Example" */;
 			buildPhases = (
-				A862093E24CB0BA42805BA46 /* Check Pods Manifest.lock */,
+				A29537B82DD48814C822D81D /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				EE75D7BCC67E9C363653635E /* Embed Pods Frameworks */,
-				4ED268B81C419F26AF9567E5 /* Copy Pods Resources */,
+				E745E9AAE334158FD48C44B4 /* [CP] Embed Pods Frameworks */,
+				A92F25D464B52DC2DA4E39BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,14 +262,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4ED268B81C419F26AF9567E5 /* Copy Pods Resources */ = {
+		A29537B82DD48814C822D81D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A92F25D464B52DC2DA4E39BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,29 +292,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRNetworkButton_Example/Pods-CRNetworkButton_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A862093E24CB0BA42805BA46 /* Check Pods Manifest.lock */ = {
+		E745E9AAE334158FD48C44B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EE75D7BCC67E9C363653635E /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91BA44521DDC7F470014AEB9 /* CRNetworkButton.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				6A3E17441CEF429A00EAAEA4 /* MyCollectionViewController.swift in Sources */,
@@ -445,7 +449,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5901706DFBB3B90038A99C04 /* Pods-CRNetworkButton_Example.debug.xcconfig */;
+			baseConfigurationReference = 926BE509EA3AD082DFDAD12F /* Pods-CRNetworkButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,7 +464,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5494E6C9DC47F7A0FFCAC2 /* Pods-CRNetworkButton_Example.release.xcconfig */;
+			baseConfigurationReference = 06E0529F0564BD30E64BE2E5 /* Pods-CRNetworkButton_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
